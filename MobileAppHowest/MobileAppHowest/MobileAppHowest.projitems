@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>c806ad50-d91b-4105-9263-91272c36340a</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>MobileAppHowest</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\APIRepositiry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\DataBaseRepos.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\GPSRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\LoginRepository.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Repositories\MediaPicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CampusVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CategoryVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LocationSelectorVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LoginVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MessageVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SubCategoryVM.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CampusPage.xaml.cs">
+      <DependentUpon>CampusPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\CategoryPage.xaml.cs">
+      <DependentUpon>CategoryPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\LocationSelectorPage.xaml.cs">
+      <DependentUpon>LocationSelectorPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MessagePage.xaml.cs">
+      <DependentUpon>MessagePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\SubCategoryPage.xaml.cs">
+      <DependentUpon>SubCategoryPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)AzureMobileClient\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Converters\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\LoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CampusPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\CategoryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Assets\Fonts\VAG_Rounded_Bold.ttf" />
+    <Content Include="$(MSBuildThisFileDirectory)BG_howest.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Campus_LPS.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Campus_BUD.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Campus_GKG.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Campus_Level.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Campus_NHS.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Campus_RDR.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Campus_RSS.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Campus_SJS.jpg" />
+    <Content Include="$(MSBuildThisFileDirectory)Campus_VES.jpeg" />
+    <Content Include="$(MSBuildThisFileDirectory)HOWEST_Logo.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ic_attach_file_black_24dp.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ic_book_black_24dp.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ic_directions_bus_black_24dp.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ic_laptop_black_24dp.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ic_location_city_black_24dp.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ic_people_black_24dp.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ic_photo_camera_black_24dp.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ic_priority_high_black_24dp.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ic_send_black_24dp.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ic_send_white_24px.png" />
+    <Content Include="$(MSBuildThisFileDirectory)ic_settings_input_hdmi_black_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\SubCategoryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\LocationSelectorPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MessagePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
